@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기억 On°</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Game.css"/>
+    <link rel="stylesheet" href="./font.css"/>
+</head>
+<body class="rmb_Homepage">
+        <header class="menuBar">
+          <p><a id="Remember" href="./">기억 ON°</a></p>
+          <ul id="mB">
+            <li><a target="_self" href="./">홈</a></li>
+            <li><a target="_self" href="./">감정일기</a></li>
+            <li><a target="_self" href="./">게임</a></li>
+            <li><a target="_self" href="./">증상알아보기</a></li>
+            <li><a target="_self" href="./">돌봄센터현황</a></li>
+          </ul>
+        </header>
+        <section>
+            <h1 id="tName">카드 뒤집기 게임</h1>
+
+            <div id="setupPanel">
+                <label>난이도를 선택해주세요: 
+                    <select id="difficulty">
+                        <option value="120">쉬움(2분)</option>
+                        <option value="90">보통(1분 30초)</option>
+                        <option value="60">어려움(1분)</option>
+                    </select>
+                </label>
+                <div>
+                    <input type="file" id="chooseImage" accept="image/*" multiple>
+                </div>
+                <!-- <label for="chooseImage">클릭하여 6장의 사진을 입력해주세요.</label> -->
+                <button type="button" id="startBtn">시작하기</button>
+            </div>
+
+            <!-- 타이머 -->
+            <div id="timer"></div>
+
+            <!-- 게임판 -->
+            <div id="gameBoard"></div>
+
+            <div id="resultMessage">축하합니다! 클리어하셨어요!</div>
+
+            <!-- 클리어 애니메이션 효과(폭죽) -->
+            <canvas id="fireworks"></canvas>
+
+            <div class="btn">
+                <button id="resetBtn">다시시작</button>
+                <button id="hintBtn">힌트사용</button>
+            </div>
+        </section>
+
+        <footer>
+            <p id="info" style="display: none;">사진을 다시 선택하시려면 상단의 게임 버튼을 눌러주세요.</p>
+        </footer>
+    <script src="js/Game.js"></script>
+</body>
+</html>

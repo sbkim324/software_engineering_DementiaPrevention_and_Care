@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+}
+
+.form-section {
+  width: 80%;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.question-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.question-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background-color: transparent;
+}
+
+.options {
+  margin-top: 8px;
+}
+
+.options label {
+  margin-right: 15px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  margin: 40px auto 200px;
+  width: 200px;
+}
+
+.dot {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+/* 오른쪽 문항 목록 */
+.question-nav {
+  width: 20%;
+  background-color: #ffecec;
+  padding: 20px;
+}
+
+.question-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.question-nav li {
+  margin: 6px 0;
+}
+
+.question-nav input[type="checkbox"] {
+  margin-left: 8px;
+}
