@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff9ef;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #fff9ef;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-bottom: 2px solid #e1e1e1;
+  box-shadow: 0 4px 8px -4px rgb(192, 189, 189);
+  font-weight: 600;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Remember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #383838;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+ul a {
+  color: #383838;
+  font-size: 1.15rem;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+ul a.active{
+  color: #e25c1b;
+}
+
+ul a:hover {
+  color: #e25c1b;
+  border-bottom: 2px solid #e25c1b;
+}
+
+h2 {
+  position: relative;
+  left: 16px;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 16px;
+  color: #383838;
+}
+
+.select-group {
+  max-width: 1200px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  width: 100%;
+  max-width: 1200px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 2px solid #848484;
+  border-radius: 8px;
+  margin: 4px 0;
+  text-align: center;
+  background: #f5f5f5;
+  color: #222;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+  background-size: 32px 32px;
+}
+
+.phone {
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+#map {
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.location {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+#zoom-controls {
+  position: absolute;
+  top: 16px; /* 지도 상단에서 16px 떨어짐 */
+  right: 16px; /* 지도 오른쪽에서 16px 떨어짐 */
+  width: 44px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+  gap: 8px;
+}
+
+#zoom-controls button {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#zoom-controls button:hover {
+  background: #f0f4ff;
+  color: #1976d2;
+}
+
+#zoom-slider {
+  position: relative;
+  width: 16px;
+  height: 80px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#zoom-track {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #e0e0e0;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+#zoom-thumb {
+  position: absolute;
+  left: 50%;
+  width: 16px;
+  height: 8px;
+  background: #1976d2;
+  border-radius: 4px;
+  transform: translate(-50%, 0);
+  transition: top 0.2s;
+  cursor: pointer;
+  box-shadow: 0 1px 4px lightgray;
+}
+
+#clickLatlng {
+  margin: 4px 4px;
+  font-size: 1em;
+  color: #222;
+  text-align: center;
+}
